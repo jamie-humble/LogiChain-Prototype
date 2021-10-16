@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/index.css") }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
+
+  </head>
+  <body>
+    <div class="landing">
+      <h1 class="h1" id="land-title">LogiChain</h1>
+      <p class="lead" id="land-lead" style="color: aliceblue;">
+        The key to unlock efficiency in your logistics chain.
+      </p>
+      <div id="land-form-cont" >
+        <form class="form-signin" method="post">      
+          <h1 class="h3" id="login">Login</h1>
+          <input type="text" name="type" style="display: none;" value="signin"/>
+          <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" />
+          <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+ 
+          <button class="btn btn-lg btn-primary btn-block login-submit" id="land-form-submit" type="submit">Login</button> </br> 
+          <button type="button" class="btn btn-outline-primary login-register" id="land-form-submit">Dont Have An Account?</button>
+
+        </form>
+        <form class="form-register" method="post"> 
+
+          <h1 class="h3" id="login">Register</h1>
+          <input type="text" name="type" style="display: none;" value="register"/>
+          <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" />
+          <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+ 
+          <button class="btn btn-lg btn-primary btn-block register-submit" id="land-form-submit" type="submit">Register</button> </br> 
+          <button type="button" class="btn btn-outline-primary register-login" id="land-form-submit">Already Have An Account?</button>
+
+        </form>
+      </div>
+    </div>
+    <div id="particles-js">
+    </div>
+
+  </body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="{{ url_for('static', filename="js/particles.js") }}"></script>
+  <!-- <script src="http://vincentgarreau.com/particles.js/particles.js"></script> -->
+  <script src="{{ url_for('static', filename="js/app.js") }}"></script>
+
+</html>
